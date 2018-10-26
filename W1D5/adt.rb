@@ -39,7 +39,25 @@ class Queue
 end
 
 class Map
+  attr_accessor :map
+
   def initialize
     map = {}
+  end
+
+  def set(key, value)
+
+  end
+
+  def get(key)
+
+  end
+
+  def delete(key)
+
+  end
+
+  def show
+
   end
 end
