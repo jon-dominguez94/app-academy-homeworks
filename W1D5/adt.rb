@@ -37,3 +37,7 @@ class Queue
     queue.first
   end
 end
+
+class Map
+
+end
