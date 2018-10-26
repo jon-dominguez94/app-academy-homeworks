@@ -1,4 +1,4 @@
-class Stack
+class MyStack
   attr_accessor :stack
 
   def initialize
@@ -18,7 +18,7 @@ class Stack
   end
 end
 
-class Queue
+class MyQueue
   attr_accessor :queue
 
   def initialize
@@ -38,15 +38,16 @@ class Queue
   end
 end
 
-class Map
-  attr_accessor :map
+class MyMap
+  attr_accessor :map, :temp
 
   def initialize
-    map = Array.new(){[]}
+    @map = Array.new(){[]}
+    map << [1,5]
   end
 
   def set(key, value)
-    
+
   end
 
   def get(key)
@@ -54,7 +55,9 @@ class Map
   end
 
   def delete(key)
-    map.delete(key)
+    map.each do |k,v|
+      map.delete([k,v]) if k == key
+    end
   end
 
   def show
