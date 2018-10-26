@@ -43,24 +43,29 @@ class MyMap
 
   def initialize
     @map = Array.new(){[]}
-    map << [1,5]
   end
 
   def set(key, value)
-
+    exists = false
+    map.each_with_index do |pair, i|
+      if pair.first == key
+        map[i] = [key, value]
+        return
+      end
+    end
+    map << [key, value] unless exists
   end
 
   def get(key)
-
+    map.each { |k,v| return v if k == key }
+    nil
   end
 
   def delete(key)
-    map.each do |k,v|
-      map.delete([k,v]) if k == key
-    end
+    map.each { |k,v| map.delete([k,v]) if k == key }
   end
 
   def show
-
+    map.each { |k,v| puts "#{k} => #{v}" }
   end
 end
