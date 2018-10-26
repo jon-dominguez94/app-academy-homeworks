@@ -42,11 +42,11 @@ class Map
   attr_accessor :map
 
   def initialize
-    map = {}
+    map = Array.new(){[]}
   end
 
   def set(key, value)
-
+    
   end
 
   def get(key)
@@ -54,7 +54,7 @@ class Map
   end
 
   def delete(key)
-
+    map.delete(key)
   end
 
   def show
