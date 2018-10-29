@@ -10,7 +10,7 @@ class Simon
   end
 
   def play
-    until game_over
+    until @game_over
       take_turn
     end
     game_over_message
@@ -20,7 +20,7 @@ class Simon
   def take_turn
     show_sequence
     require_sequence
-    unless game_over
+    unless @game_over
       round_success_message
       @sequence_length += 1
     end
@@ -39,11 +39,11 @@ class Simon
   end
 
   def round_success_message
-
+    "You got it!"
   end
 
   def game_over_message
-
+    puts "Game Over! Score: #{@sequence_length - 1}"
   end
 
   def reset_game
