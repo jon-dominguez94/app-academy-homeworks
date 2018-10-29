@@ -28,6 +28,11 @@ class Simon
 
   def show_sequence
     add_random_color
+    @seq.each do |color|
+      puts color
+      sleep(1)
+      puts %x{clear}
+      sleep(0.25)
   end
 
   def require_sequence
@@ -35,7 +40,7 @@ class Simon
   end
 
   def add_random_color
-    seq << ["red", "blue", "yellow", "green"].sample
+    seq << COLORS.sample
   end
 
   def round_success_message
