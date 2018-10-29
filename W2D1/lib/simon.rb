@@ -18,6 +18,7 @@ class Simon
   end
 
   def take_turn
+    puts %x{clear}
     show_sequence
     require_sequence
     unless @game_over
@@ -32,7 +33,7 @@ class Simon
       puts color
       sleep(1)
       puts %x{clear}
-      sleep(0.25)
+      sleep(0.15)
     end
   end
 
@@ -64,4 +65,10 @@ class Simon
     @game_over = false
     @seq = []
   end
+end
+
+if __FILE__ == $PROGRAM_NAME
+  puts %x{clear}
+  game = Simon.new
+  game.play
 end
