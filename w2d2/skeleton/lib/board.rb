@@ -38,5 +38,11 @@ class Board
     puts ""
   end
 
+  def one_side_empty?
+    
+  end
+
+  def winner
   
+  end
 end
