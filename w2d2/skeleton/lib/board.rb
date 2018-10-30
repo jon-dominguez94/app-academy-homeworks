@@ -50,7 +50,7 @@ class Board
     if ending_cup_idx == 6 || ending_cup_idx == 13
       :prompt
     elsif @cups[ending_cup_idx].length == 1
-      :switch
+      return :switch
     else
       ending_cup_idx
     end
@@ -65,10 +65,16 @@ class Board
   end
 
   def one_side_empty?
-    @cups.[0..5].all? {|cup| cup.empty?} || @cups[7..12].all? {|cup| cup.empty?}
+    @cups[0..5].all? {|cup| cup.empty?} || @cups[7..12].all? {|cup| cup.empty?}
   end
 
   def winner
-
+    player1_score = @cups[6].length
+    player2_score = @cups[13].length
+    if player1_score == player2_score
+      :draw
+    else
+      player1_score > player2_score ? @name1 : @name2
+    end
   end
 end
