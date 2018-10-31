@@ -28,7 +28,8 @@ describe Dessert do
 
   describe "#add_ingredient" do
     it "adds an ingredient to the ingredients array" do
-      
+      brownie.add_ingredient('sugar')
+      expect(brownie.ingredients).to include('sugar')
     end
   end
 
