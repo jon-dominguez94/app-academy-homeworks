@@ -58,3 +58,20 @@ def slow_dance(dir, tiles_array)
     return i if tile == dir
   end
 end
+
+def tiles_hash
+  {
+    "up" => 0,
+    "right-up" => 1,
+    "right"=> 2,
+    "right-down" => 3,
+    "down" => 4,
+    "left-down" => 5,
+    "left" => 6,
+    "left-up" => 7
+  }
+end
+
+def fast_dance(dir, tiles_hash)
+  tiles_hash[dir]
+end
