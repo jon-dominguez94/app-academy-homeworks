@@ -48,3 +48,13 @@ def clever(array)
 
   longest
 end
+
+def tiles_array
+  ["up", "right-up", "right", "right-down", "down", "left-down", "left",  "left-up" ]
+end
+
+def slow_dance(dir, tiles_array)
+  tiles_array.each_with_index do |tile, i|
+    return i if tile == dir
+  end
+end
