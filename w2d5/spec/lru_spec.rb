@@ -38,10 +38,18 @@ RSpec.describe LRUCache do
     end
   end
 
+
   describe '#count' do
     before(:each) { cache.add(2); cache.add(3) }
     it 'returns the amount of elements in the cache' do
       expect(cache.count).to eq(2)
+    end
+  end
+
+  describe '#show' do
+    before(:each) { cache.add(2); cache.add(3); cache.add("hi") }
+    it 'prints the elements in the cache' do
+      expect(cache.show).to include("hi")
     end
   end
 end
