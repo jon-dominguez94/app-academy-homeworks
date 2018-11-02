@@ -22,7 +22,7 @@ class LRUCache
      nil
    end
 
-   private
+   # private
    # helper methods go here!
    attr_reader :cache, :size
 
