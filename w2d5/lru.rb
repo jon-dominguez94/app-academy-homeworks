@@ -6,6 +6,7 @@ class LRUCache
 
    def count
      # returns number of elements currently in cache
+     cache.length
    end
 
    def add(el)
@@ -18,5 +19,6 @@ class LRUCache
 
    private
    # helper methods go here!
+   attr_reader :cache, :size
 
  end
