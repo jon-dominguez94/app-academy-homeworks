@@ -33,11 +33,15 @@ RSpec.describe LRUCache do
       cache.add({a:2, b:"hello"})
       cache.add([1,2,3])
       cache.add(2)
+      expect(cache.cache).to_not include(1)
       expect(cache.cache).to eq(["hi", {a:2, b:"hello"},[1,2,3],2])
     end
   end
 
   describe '#count' do
-
+    before(:each) { cache.add(2); cache.add(3) }
+    it 'returns the amount of elements in the cache' do
+      expect(cache.count).to eq(2)
+    end
   end
 end
