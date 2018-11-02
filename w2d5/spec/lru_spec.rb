@@ -23,6 +23,11 @@ RSpec.describe LRUCache do
       cache.add([1,2,3])
       expect(cache.cache).to eq([1, "hi", {a:2, b:"hello"},[1,2,3]])
     end
+    it 'does not add duplicates' do
+      cache.add("hi")
+      cache.add(1)
+      expect(cache.cache).to eq(["hi", 1])
+    end
   end
 
   describe '#count' do
