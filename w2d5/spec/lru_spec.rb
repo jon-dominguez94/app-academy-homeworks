@@ -28,6 +28,13 @@ RSpec.describe LRUCache do
       cache.add(1)
       expect(cache.cache).to eq(["hi", 1])
     end
+    it 'keeps a max size and deletes the least recently used element' do
+      cache.add("hi")
+      cache.add({a:2, b:"hello"})
+      cache.add([1,2,3])
+      cache.add(2)
+      expect(cache.cache).to eq(["hi", {a:2, b:"hello"},[1,2,3],2])
+    end
   end
 
   describe '#count' do
