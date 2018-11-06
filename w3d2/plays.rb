@@ -112,7 +112,7 @@ class Playwright
    @birth_year = options['birth_year']
   end
 
-  def create
+  def insert
     raise "#{self} already in database" if self.id
     PlayDBConnection.instance.execute(<<-SQL, self.name, self.birth_year)
       INSERT INTO
