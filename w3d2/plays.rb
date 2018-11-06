@@ -87,5 +87,8 @@ class Playwright
   attr_accessor :name, :birth_year
   attr_reader :id
 
-  
+  def self.all
+    data = PlayDBConnection.instance.execute("SELECT * FROM plays")
+    data.map {|results| Play.new(results)}
+  end
 end
