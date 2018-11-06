@@ -81,3 +81,11 @@ class Play
 
     plays.map {|play| Play.new(play)}
   end
+end
+
+class Playwright
+  attr_accessor :name, :birth_year
+  attr_reader :id
+
+  
+end
