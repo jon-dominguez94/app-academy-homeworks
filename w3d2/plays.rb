@@ -105,4 +105,10 @@ class Playwright
 
     Playwright.new(person.first)
   end
+
+  def initialize(options)
+   @id = options['id']
+   @name = options['name']
+   @birth_year = options['birth_year']
+  end
 end
