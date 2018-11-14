@@ -12,4 +12,8 @@ class User < ApplicationRecord
     return user if user && BCrypt::Password.new(user.password_digest).is_password?(password)
     nil
   end
+
+  def self.generate_session_token
+    SecureRandom::urlsafe_base64(16)
+  end
 end
