@@ -1,0 +1,23 @@
+<form action="<%= users_url %>" method="post">
+  <%= auth_token %>
+  <h1>Create an account</h1>
+  <table>
+    <tr>
+      <td>
+        Email:
+      </td>
+      <td>
+        <input type="text" name="user[email]" value="">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Password:
+      </td>
+      <td>
+        <input type="password" name="user[password]" value="">
+      </td>
+    </tr>
+  </table>
+  <input type="submit" name="" value="Create account">
+</form>

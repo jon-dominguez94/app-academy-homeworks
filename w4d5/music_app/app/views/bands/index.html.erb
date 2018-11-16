@@ -1,0 +1,18 @@
+<h2>Registered Bands</h2>
+<ul>
+  <a href="<%= new_band_url %>">Register your band!</a>
+  <br>
+  <br>
+  <% Band.all.each do |band| %>
+    <li><%= band.name %></li>
+    <form action="<%= edit_band_url(band) %>" method="get">
+      <input type="submit" name="" value="Edit">
+    </form>
+    <form action="<%= band_url(band) %>" method="post">
+      <%= auth_token %>
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" name="" value="Delete">
+    </form>
+    <br>
+  <% end %>
+</ul>

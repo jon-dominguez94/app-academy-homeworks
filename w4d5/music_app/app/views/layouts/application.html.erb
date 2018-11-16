@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MusicApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <header>
+    <a id="homepage" href="<%= bands_url %>"><h1>Music App</h1></a>
+    <div>
+    <% if logged_in? %>
+      <form class="in-headers" action="<%= session_url %>" method="post">
+        <%= auth_token %>
+        <input type="hidden" name="_method" value="delete">
+        <input class="accounts" type="submit" name="" value="Logout">
+      </form>
+    <% else %>
+      <form class="in-headers" action="<%= new_session_url %>" method="get">
+        <input class="accounts" type="submit" name="" value="Sign In">
+      </form>
+      <form class="in-headers" action="<%= new_user_url %>" method="get">
+        <input class="accounts" type="submit" name="" value="Sign Up">
+      </form>
+    <% end %>
+    </div>
+  </header>
+  <body>
+    <% unless flash.now[:errors].nil?  %>
+      <% flash.now[:errors].each do |error| %>
+        <p>Error: <%= error %></p>
+      <% end %>
+    <% end %>
+    <% unless flash[:notice].nil?  %>
+        <p><%= flash[:notice] %></p>
+      <% end %>
+    <%= yield %>
+  </body>
+</html>
