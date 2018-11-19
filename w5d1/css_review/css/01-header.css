@@ -11,11 +11,12 @@ body {
 .header {
   background: #f00;
   border-bottom: 1px solid #eee;
-  color: white;
+  color: #fff;
 }
 
 .header a {
-
+  display: block;
+  padding: 10px 20px;
 }
 
 .header-nav {
