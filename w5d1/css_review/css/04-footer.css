@@ -10,15 +10,15 @@
 }
 
 .footer-copy {
-
+  float: left;
 }
 
 .footer-links {
-
+  float: right;
 }
 
 .footer-links > li {
-
+  float: left;
 }
 
 .footer a {
