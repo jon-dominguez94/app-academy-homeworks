@@ -21,4 +21,6 @@ body {
   background: green;
   width: 900px;
   margin: auto;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
 }
