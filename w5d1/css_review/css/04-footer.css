@@ -11,6 +11,8 @@
 
 .footer-copy {
   float: left;
+  display: block;
+  padding: 20px;
 }
 
 .footer-links {
@@ -22,7 +24,8 @@
 }
 
 .footer a {
-
+  display: block;
+  padding: 20px;
 }
 
 .footer a:hover {
