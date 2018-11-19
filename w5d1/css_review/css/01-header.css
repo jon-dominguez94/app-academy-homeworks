@@ -20,4 +20,5 @@ body {
 .header-nav {
   background: green;
   width: 900px;
+  margin: auto;
 }
