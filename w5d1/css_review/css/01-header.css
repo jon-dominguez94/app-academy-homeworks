@@ -5,11 +5,12 @@ body {
   font-family: sans-serif;
   font-weight: 400;
   font-size: 16px;
-  background: #eee;
+  background: green;
 }
 
 .header {
-  background: red;
+  background: #f00;
+  border-bottom: 1px solid #eee;
 }
 
 .header a {
@@ -17,5 +18,6 @@ body {
 }
 
 .header-nav {
-
+  background: green;
+  width: 900px;
 }
