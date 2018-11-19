@@ -40,7 +40,8 @@ with a class attribute containing 'col-' */
 }
 
 /* CSS Day 6 media queries */
-@media all and (max-width: ___) {
-
+@media all and (max-width: 900px) {
+  [class*='col-'] {
+    width: 100%;
+  }
 }
-
