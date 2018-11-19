@@ -110,3 +110,8 @@ label {
     display: block;
 }
 
+.hamburger-dropdown > li {
+  background: url('assets/hamburger.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+}
