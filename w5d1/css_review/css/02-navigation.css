@@ -7,7 +7,7 @@
 }
 
 .header-logo:hover {
-
+  background: #000;
 }
 
 .header-list {
@@ -20,5 +20,5 @@
 }
 
 .header-list > li:hover {
-
+  background: #000;
 }
