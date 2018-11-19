@@ -11,10 +11,12 @@
 
 .content-sidebar {
   width: 240px;
+  float: left;
 }
 
 .content-main {
   width: 660px;
+  float: left;
 }
 
 .content h1 {
