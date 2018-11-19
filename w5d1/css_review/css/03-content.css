@@ -1,7 +1,12 @@
 /* PHASE 3: Content */
 
 .content {
-
+  background: #fff;
+  width: 660px;
+  margin: 0 auto;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
 }
 
 .content-sidebar {
