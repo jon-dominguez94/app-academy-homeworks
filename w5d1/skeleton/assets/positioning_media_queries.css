@@ -139,5 +139,21 @@ label {
     box-shadow: black 5px 5px 10px;
   }
 
-  
+  .hamburger-dropdown ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: black 5px 5px 10px;
+  }
+
+  .hamburger-dropdown:hover ul {
+    display: flex;
+    background: ghostwhite;
+  }
+
+  .hamburger-dropdown ul li:hover a {
+    text-decoration: underline;
+  }
 };
