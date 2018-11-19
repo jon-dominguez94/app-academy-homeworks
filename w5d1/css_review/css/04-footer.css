@@ -7,6 +7,7 @@
   border-right: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
   background: #fff;
+  color: #aaa;
 }
 
 .footer-copy {
@@ -29,5 +30,5 @@
 }
 
 .footer a:hover {
-
+  color: black;
 }
