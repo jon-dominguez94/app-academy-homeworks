@@ -10,13 +10,15 @@
 }
 
 .content-sidebar {
-  width: 240px;
+  width: 200px;
   float: left;
+  padding: 20px;
 }
 
 .content-main {
-  width: 660px;
+  width: 620px;
   float: left;
+  padding: 20px;
 }
 
 .content h1 {
