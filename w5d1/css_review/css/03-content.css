@@ -2,7 +2,7 @@
 
 .content {
   background: #fff;
-  width: 660px;
+  width: 900px;
   margin: 0 auto;
   border-left: 1px solid #aaa;
   border-right: 1px solid #aaa;
@@ -10,11 +10,11 @@
 }
 
 .content-sidebar {
-
+  width: 240px;
 }
 
 .content-main {
-
+  width: 660px;
 }
 
 .content h1 {
