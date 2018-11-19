@@ -1,7 +1,12 @@
 /* PHASE 4: Footer */
 
 .footer {
-
+  width: 900px;
+  margin: 0 auto;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  background: #fff;
 }
 
 .footer-copy {
