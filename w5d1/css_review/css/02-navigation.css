@@ -3,6 +3,7 @@
 .header-logo {
   float: left;
   border-right: 1px solid #eee;
+  font-weight: 700;
 }
 
 .header-logo:hover {
