@@ -2,6 +2,7 @@
 
 .header-logo {
   float: left;
+  border-right: 1px solid #eee;
 }
 
 .header-logo:hover {
@@ -14,6 +15,7 @@
 
 .header-list > li {
   float: left;
+  border-left: 1px solid #eee;
 }
 
 .header-list > li:hover {
