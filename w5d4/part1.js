@@ -29,7 +29,7 @@ function mysteryScoping3() {
   console.log(x);
 }
 
-mysteryScoping3();
+// mysteryScoping3();
 
 function mysteryScoping4() {
   let x = 'out of block';
