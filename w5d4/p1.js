@@ -37,3 +37,20 @@ console.log(isPrime(5));
 console.log(isPrime(8));
 console.log(isPrime(10));
 console.log(isPrime(11));
+
+
+function sumOfNPrimes (n) {
+  let sum = 0;
+  let count = 0;
+  let i = 2;
+
+  while (count < n) {
+    if (isPrime(i)) {
+      sum += i;
+      count++;
+    }
+    i++;
+  }
+
+  return sum;
+}
