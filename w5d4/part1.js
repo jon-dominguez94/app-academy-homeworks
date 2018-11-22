@@ -48,8 +48,15 @@ function mysteryScoping5() {
     let x = 'in block';
     console.log(x);
   }
-  let x = 'out of block again';
+  // let x = 'out of block again';
   console.log(x);
 }
 
 mysteryScoping5();
+
+
+function madLib(verb, adj, noun) {
+  return `We shall ${verb} the ${adj} ${noun}`
+}
+
+console.log(madLib('run', 'quickly', 'cars'));
