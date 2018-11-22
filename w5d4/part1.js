@@ -8,3 +8,14 @@ function mysteryScoping1() {
 }
 
 mysteryScoping1();
+
+function mysteryScoping2() {
+  const x = 'out of block';
+  if (true) {
+    const x = 'in block';
+    console.log(x);
+  }
+  console.log(x);
+}
+
+mysteryScoping2();
