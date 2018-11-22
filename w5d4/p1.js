@@ -16,3 +16,15 @@ function fizzbuzz(arr) {
 }
 
 console.log(fizzbuzz([1,2,3,4,5,15,24,30,33]));//.forEach()
+
+
+function isPrime(number) {
+  if (number < 2) { return false ; }
+  for(let i = 2; i < number; i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
