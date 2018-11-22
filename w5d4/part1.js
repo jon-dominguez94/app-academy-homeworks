@@ -56,7 +56,15 @@ mysteryScoping5();
 
 
 function madLib(verb, adj, noun) {
-  return `We shall ${verb} the ${adj} ${noun}`
+  return `We shall ${verb.toUpperCase()} the ${adj.toUpperCase()} ${noun.toUpperCase()}`
 }
 
-console.log(madLib('run', 'quickly', 'cars'));
+console.log(madLib('make', 'best', 'guac'));
+
+
+function isSubstring(searchString, subString) {
+  return searchString.includes(subString) ? true : false
+}
+
+console.log(isSubstring("time to program", "time"));
+console.log(isSubstring("Jump for joy", "joys"));
