@@ -23,6 +23,7 @@ View.prototype.exercise1 = function () {
   //Result: Every square should turn orange (we already have a CSS rule)
 
   //your code here!
+  $("li.square").css("background-color", "orange");
 };
 
 View.prototype.exercise2 = function () {
