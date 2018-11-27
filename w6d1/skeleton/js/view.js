@@ -84,6 +84,15 @@ View.prototype.exercise6 = function () {
   //hint: use window._randomColorString() (defined at top) to get a random color!
 
   //your code here!
+  $('.square').forEach(el => {
+    const $sq = $(el);
+    $sq.css("background-color", _randomColorString());
+  });
+
+  // $('.square').each((idx, el) => {
+  //   var $sq = $(el);
+  //   $sq.css("background-color", _randomColorString());
+  // });
 };
 
 View.prototype.exercise7 = function(){
@@ -93,7 +102,12 @@ View.prototype.exercise7 = function(){
   //You should push the button for exercise 6 first to try it on the
   //rainbow.
 
-  //your code here!
+  // your code here!
+  $('#easel').on("mouseover", ".square", e => {
+    const $sq = $(e.currentTarget);
+    console.log($sq.css("background-color"));
+  });
+  
 };
 
 
