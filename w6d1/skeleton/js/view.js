@@ -51,7 +51,7 @@ View.prototype.exercise4 = function () {
   //Result: Your name appears in every other square.
 
   //your code here!
-  // $(".square:nth-child(even)").text("Jon");
+  $(".square:nth-child(even)").text("Jon");
 };
 
 View.prototype.exercise5 = function () {
