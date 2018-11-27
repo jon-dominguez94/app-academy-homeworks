@@ -23,7 +23,9 @@ View.prototype.exercise1 = function () {
   //Result: Every square should turn orange (we already have a CSS rule)
 
   //your code here!
-  $("li.square").css("background-color", "orange");
+  // $("li.square").css("background-color", "orange");
+  $("li.square").addClass("orange");
+  
 };
 
 View.prototype.exercise2 = function () {
@@ -31,7 +33,8 @@ View.prototype.exercise2 = function () {
   //Result: Every square vanishes
 
   //your code here!
-  $("li.square").css("display", "none");
+  // $("li.square").css("display", "none");
+  $("li.square").remove();
 };
 
 View.prototype.exercise3 = function () {
@@ -48,6 +51,7 @@ View.prototype.exercise4 = function () {
   //Result: Your name appears in every other square.
 
   //your code here!
+  // $(".square:nth-child(even)").text("Jon");
 };
 
 View.prototype.exercise5 = function () {
