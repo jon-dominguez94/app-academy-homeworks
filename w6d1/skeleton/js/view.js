@@ -62,7 +62,18 @@ View.prototype.exercise5 = function () {
   //hint: checkout the addRow function at the bottom of the file: we set the
   //  'data-pos' of every square
 
-  //your code here!
+  your code here!
+  $('.square').on("click", function(event) {
+    const pos = $(event.currentTarget).attr("data-pos");
+    alert(pos);
+  });
+
+  // $('.square').on("click", e => {
+  //   const $sq = $(e.currentTarget);
+  //   alert($sq.attr("data-pos"));
+  // });
+
+
 };
 
 View.prototype.exercise6 = function () {
