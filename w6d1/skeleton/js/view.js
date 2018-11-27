@@ -31,6 +31,7 @@ View.prototype.exercise2 = function () {
   //Result: Every square vanishes
 
   //your code here!
+  $("li.square").css("display", "none");
 };
 
 View.prototype.exercise3 = function () {
