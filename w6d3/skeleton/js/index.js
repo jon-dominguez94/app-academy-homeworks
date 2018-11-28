@@ -7,7 +7,7 @@ $.ajax({
   url: 'http://api.openweathermap.org/data/2.5/weather' +
     '?q=London,uk&appid=bcb83c4b54aee8418983c2aff3073b3b',
   success(data) {
-    console.log("Here's the weather!")
+    console.log("Here's the weather!");
     console.log(data);
   },
   error() {
@@ -16,3 +16,4 @@ $.ajax({
 });
 
 // Add another console log here, outside your AJAX request
+console.log("AJAX BOOOOII")
