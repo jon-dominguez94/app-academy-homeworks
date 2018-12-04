@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     JSON.parse(localStorage.state) : {};
   let store = configureStore(preloadedState);
 
-  store = applyMiddlewares(store, [addLoggingToDispatch]);
+  // store = applyMiddlewares(store, [addLoggingToDispatch]);
   const root = document.getElementById('content');
   ReactDOM.render(<Root store={store} />, root);
 });
