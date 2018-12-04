@@ -1227,13 +1227,10 @@ document.addEventListener('DOMContentLoaded', function () {
 var addLoggingToDispatch = function addLoggingToDispatch(store) {
   return function (next) {
     return function (action) {
-      var dp = store.dispatch;
-      return function (action) {
-        console.log("Old state: ".concat(store.getState()));
-        console.log("Action: ".concat(action));
-        dp(action);
-        console.log("New state: ".concat(store.getState()));
-      };
+      console.log(store.getState());
+      console.log(action);
+      next(action);
+      console.log(store.getState());
     };
   };
 };

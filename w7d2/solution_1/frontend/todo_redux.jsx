@@ -16,13 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 const addLoggingToDispatch = store => next => action => {
-  const dp = store.dispatch;
-  return (action) => {
-    console.log(`Old state: ${store.getState()}`);
-    console.log(`Action: ${action}`);
-    dp(action);
-    console.log(`New state: ${store.getState()}`);
-  };
+  console.log(store.getState());
+  console.log(action);
+  next(action);
+  console.log(store.getState());
 };
 
 function applyMiddlewares(store, middlewares) {
