@@ -1212,6 +1212,16 @@ document.addEventListener('DOMContentLoaded', function () {
   }), root);
 });
 
+function addLoggingToDispatch(store) {
+  var dp = store.dispatch;
+  return function (action) {
+    console.log("Old state: ".concat(store.getState()));
+    console.log("Action: ".concat(action));
+    dp(action);
+    console.log("New state: ".concat(store.getState()));
+  };
+}
+
 /***/ }),
 
 /***/ "./frontend/util/id_generator.js":
