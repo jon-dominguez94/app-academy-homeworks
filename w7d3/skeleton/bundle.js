@@ -23911,6 +23911,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _actions_giphy_actions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../actions/giphy_actions */ "./actions/giphy_actions.js");
 
 
+var giphysReducer = function giphysReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case _actions_giphy_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_SEARCH_GIPHYS"]:
+      return action.giphys;
+
+    default:
+      return state;
+  }
+};
+
 /***/ }),
 
 /***/ "./reducers/root_reducer.js":
