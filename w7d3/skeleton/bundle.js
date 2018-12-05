@@ -207,10 +207,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./store/store */ "./store/store.js");
 /* harmony import */ var _components_root__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/root */ "./components/root.jsx");
+/* harmony import */ var _util_api_util__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./util/api_util */ "./util/api_util.js");
+/* harmony import */ var _actions_giphy_actions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./actions/giphy_actions */ "./actions/giphy_actions.js");
 
 
 
 
+var store = Object(_store_store__WEBPACK_IMPORTED_MODULE_2__["default"])();
+window.store = store;
+
+
+window.fetchSearchGiphys = _util_api_util__WEBPACK_IMPORTED_MODULE_4__["default"];
+window.receiveSearchGiphys = _actions_giphy_actions__WEBPACK_IMPORTED_MODULE_5__["receiveSearchGiphys"];
 
 /***/ }),
 
