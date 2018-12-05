@@ -198,10 +198,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./store/store */ "./store/store.js");
 /* harmony import */ var _components_root__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/root */ "./components/root.jsx");
+/* harmony import */ var _util_api_util_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./util/api_util.js */ "./util/api_util.js");
 
 
 
 
+
+window.fetchSearchGiphys = _util_api_util_js__WEBPACK_IMPORTED_MODULE_4__["default"];
 
 /***/ }),
 
@@ -23947,10 +23950,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-function fetchSearchGiphys(searchItem) {
+function fetchSearchGiphys(searchTerm) {
   return $.ajax({
     method: "GET",
-    url: "http://api.giphy.com/v1/gifs/search?q=${searchItem}&api_key=dc6zaTOxFJmzC&limit=2"
+    url: "http://api.giphy.com/v1/gifs/search?q=".concat(searchTerm, "&api_key=dc6zaTOxFJmzC&limit=2")
   });
 }
 
