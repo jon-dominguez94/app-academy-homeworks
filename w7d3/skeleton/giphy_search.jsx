@@ -6,8 +6,8 @@ import Root from './components/root';
 const store = configureStore();
 window.store = store;
 
-import fetchSearchGiphys from './util/api_util';
-import {receiveSearchGiphys} from './actions/giphy_actions';
+// import fetchSearchGiphys from './util/api_util';
+import {receiveSearchGiphys, fetchSearchGiphys} from './actions/giphy_actions';
 
 window.fetchSearchGiphys = fetchSearchGiphys;
 window.receiveSearchGiphys = receiveSearchGiphys;
