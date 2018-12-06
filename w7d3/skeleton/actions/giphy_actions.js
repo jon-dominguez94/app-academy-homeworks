@@ -10,9 +10,7 @@ export const receiveSearchGiphys = giphys => {
   };
 };
 
-export const fetchSearchGiphys = searchTerm => {
-  return dispatch => {
-    APIUtil.fetchSearchGiphys(searchTerm)
-      .then(giphys => dispatch(receiveSearchGiphys(giphys.data)));
-  };
+export const fetchSearchGiphys = searchTerm => dispatch => {
+  APIUtil.fetchSearchGiphys(searchTerm)
+    .then(giphys => dispatch(receiveSearchGiphys(giphys.data)));
 };
